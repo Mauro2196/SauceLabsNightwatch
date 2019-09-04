@@ -9,6 +9,9 @@ node {
         stage('Clean up') {
             sh 'rm -rf node_modules/'
         }
+        stage('Check out') {
+            checkout scm
+        }
         nodejs(nodeJSInstallationName: NODE_VER, configId: null) {
             stage('Setup (nodejs)') {
                 // change `node11` for proper node installation name
