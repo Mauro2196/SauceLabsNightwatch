@@ -7,7 +7,7 @@ node {
         def NODE_VER = 'node11'
 
         stage('Clean up') {
-            
+            sh 'rm -rf node_modules/'
         }
         nodejs(nodeJSInstallationName: NODE_VER, configId: null) {
             stage('Setup (nodejs)') {
