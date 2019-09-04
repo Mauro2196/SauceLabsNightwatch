@@ -13,9 +13,7 @@ node {
         nodejs(nodeJSInstallationName: NODE_VER, configId: null) {
             stage('Setup (nodejs)') {
                 // change `node11` for proper node installation name
-                sh 'npm install -g yarn'
-                sh 'yarn cache clean'
-                sh 'yarn install'
+                sh 'npm install'
             }
             
             stage('Run Tests') {
