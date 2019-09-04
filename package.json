@@ -8,6 +8,7 @@
   },
   "devDependencies": {
     "nightwatch": "^1.2.1",
-    "saucelabs": "1.4.0"
+    "saucelabs": "1.4.0",
+    "dotenv": "^6.0.0"
   }
 }

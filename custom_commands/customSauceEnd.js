@@ -1,3 +1,4 @@
+require('dotenv').config();
 exports.command = function(callback) {
     var SauceLabs = require("saucelabs");
 

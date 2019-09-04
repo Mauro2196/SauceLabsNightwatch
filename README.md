@@ -9,8 +9,7 @@
 2. Sauce Credentials
     * In the terminal export your Sauce Labs Credentials as environmental variables:
     ```
-    $ export SAUCE_USERNAME="zemoga2"
-	$ export SAUCE_ACCESS_KEY="54d2c40f-2f2d-4bfe-8121-b7e1c4a9dcd9"
+    create a file .env and add the  keys SAUCE_USERNAME & SAUCE_ACCESS_KEY
     ```
 3. Project Dependencies
 	* Install Node modules
