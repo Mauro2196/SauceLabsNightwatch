@@ -11,6 +11,7 @@
     ```
     create a file .env and add the  keys SAUCE_USERNAME & SAUCE_ACCESS_KEY
     ```
+    To get the keys go to settings in the saucelabs webpage
 3. Project Dependencies
 	* Install Node modules
 	```
