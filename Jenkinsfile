@@ -4,11 +4,13 @@ node {
         'SAUCE_ACCESS_KEY=54d2c40f-2f2d-4bfe-8121-b7e1c4a9dcd9'
     ]) {
         // consts
-        def AUTOMATE_FOLDER = 'sony-roku-automate'
         def NODE_VER = 'node11'
 
         stage('Clean up') {
             sh 'rm -rf node_modules/'
+        }
+        stage('Check out') {
+            checkout scm
         }
         nodejs(nodeJSInstallationName: NODE_VER, configId: null) {
             stage('Setup (nodejs)') {
