@@ -7,14 +7,14 @@ module.exports = {
 
     'Pass': function(client) {
         client
-            .url('https://www.uefa.com/uefachampionsleague/')
+            .url('https://www.playstation.com/en-us/network/vue/')
             .waitForElementVisible('body', 2000)
-            .waitForElementVisible('.cc_btn.cc_btn_accept_all', 20000)
-            .click('.cc_btn.cc_btn_accept_all')
-            .click('.favourite_club > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > span')
-            .click('.navbar-lv2-nav.js-nav li:nth-child(6)')
-            .waitForElementPresent('.box-content.clearfix .teams-overview_group:nth-child(1)' , 20000)
-            .assert.title('Clubs - UEFA Champions League - UEFA.com');
+            .waitForElementVisible('.video-takeover-hero__content > div > div> div > div > div> div> div > a', 20000)
+            .click('.video-takeover-hero__content > div > div> div > div > div> div> div > a')
+            .waitForElementVisible('.enterzipcode__input--container>button', 20000)
+            .setValue('.enterzipcode__input--container>input', '10001')
+            .click('.enterzipcode__input--container>button')
+            .waitForElementPresent('.baseplans__plans>div>h3' , 20000)
     },
 
 
